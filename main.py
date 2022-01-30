@@ -13,7 +13,7 @@ logger = Logger()
 argument_parser = ArgumentParser()
 
 # List of ['argument-name', 'default-value']
-POSSIBLE_ARGUMENTS = {'pixels-x': 500, 'pixels-y': 700, 'seed': 2}
+POSSIBLE_ARGUMENTS = {'pixels-x': 526, 'pixels-y': 726, 'seed': 6}
 
 # Parse the arguments
 arguments = argument_parser.parse(POSSIBLE_ARGUMENTS, argv)
@@ -26,8 +26,12 @@ image = Image.new("RGB", (pixels_x, pixels_y), (255,255,255))
 draw = ImageDraw.Draw(image)
 
 # Draw some stars
-star_painter = StarPainter(image, 1, (255,0,0))
-star_painter.paint_stars(pixels_x, pixels_y, 15, 25)
+star_painter = StarPainter(image)
+star_painter.paint_stars(5, 30, 250, (255,0,0), (255,255,255))
+
+# Draw main diamond
+DIAMOND_SIZE = 400
+star_painter.paint_star(pixels_x//2, pixels_y//2, DIAMOND_SIZE, (255,0,0), 10)
 
 image.save(f"./output/art.png")
 logger.log("painted!")

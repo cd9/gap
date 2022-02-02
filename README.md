@@ -10,9 +10,9 @@ There was a need for a custom ace of diamonds card. This project may or may not 
 
 # Features
 - [x] Argument parsing
-- [ ] Diamond paint tool
+- [x] Star paint tool
+- [x] Letter paint tool
 - [ ] Border paint tool
-- [ ] Star paint tool
 
 # Sample
 ![Ace of Diamonds](/output/art.png)

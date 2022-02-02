@@ -10,3 +10,5 @@ The idea is to build up a set of classes that paint onto the canvas in wacky way
 - [ ] Border paint tool
 - [ ] Star paint tool
 
+# Sample
+![Ace of Diamonds](/output/art.png)

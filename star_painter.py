@@ -31,7 +31,7 @@ class StarPainter():
     def paint_star(self, center_x, center_y, width, color, tail_factor):
         if width%2==0:
             width += 1
-        height = int(width*1.15)
+        height = int(width*1.25)
         if height%2==0:
             height += 1
 
